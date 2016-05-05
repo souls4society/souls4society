@@ -2361,6 +2361,7 @@
 		select:invalid,
 		textarea:invalid {
 			box-shadow: none;
+			border-color:red;
 		}
 
 		input[type="text"]:focus,
@@ -3919,3 +3920,12 @@
 			}
 
 		}
+		
+		
+		
+		
+/* Profile pictures*/
+   img.profilePic {
+		height:13em;
+		width:13em;
+   }

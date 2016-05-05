@@ -55,6 +55,37 @@
 				// Hack: Activate non-input submits.
 				$('#submitLink').click(function(){
 					
+					var namePattern = /^[A-Za-z ]{3,20}$/;
+					var emailPattern = /^[a-z 0-9 A-Z \.\+\_]+@[a-z A-Z 0-9]+\.[a-z A-Z]{2,4}$/;
+					
+					if(!namePattern.test($('#name').val()))
+					{
+						$("#nameError").show();
+						return false;
+					}
+					else{
+						$("#nameError").hide();
+					}
+					
+					if(!emailPattern.test($('#email').val()))
+					{
+						$("#emailError").show();
+						return false;
+					}
+					else{
+						$("#emailError").hide();
+					}
+					
+					if($('#message').val().length < 20)
+					{
+						$("#messageError").show();
+						return false;
+					}
+					else{
+						$("#messageError").hide();
+					}
+					
+					
 					$('#submitLink').addClass("disabled special");
 					$('#submitLink').text("Sending...");
 					

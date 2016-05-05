@@ -138,7 +138,7 @@
 						<div class="features">
 								<section>
 									<span>	
-									<img src="images/Kuldeep.jpg" alt="Kuldeep" height="220em" width="220em" 
+									<img src="images/Kuldeep.jpg" alt="Kuldeep" class="profilePic"  
 									style="border-radius:2.5em;
 									box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.7)">
 									</span>
@@ -148,7 +148,7 @@
 								</section>
 								<section>
 									<span>	
-									<img src="images/Prashant.jpg" alt="Kuldeep" height="220em" width="220em" 
+									<img src="images/Prashant.jpg" alt="Kuldeep" class="profilePic" 
 									style="border-radius:2.5em;
 									box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.7)">
 									</span>
@@ -158,7 +158,7 @@
 								</section>
 								<section>
 									<span>
-									<img src="images/Sarvesh.jpg" alt="Kuldeep" height="220em" width="220em" 
+									<img src="images/Sarvesh.jpg" alt="Kuldeep" class="profilePic"  
 									style="border-radius:2.5em;
 									box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.7)">
 									</span>
@@ -169,13 +169,13 @@
 								</section>
 								<section>
 									<span>
-									<img src="images/Tushar.jpg" alt="Kuldeep" height="220em" width="220em" 
+									<img src="images/Tushar.jpg" alt="Kuldeep" class="profilePic"  
 									style="border-radius:2.5em;
 									box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.7)">
 									</span>
 									<h3>Tushar</h3>
 									<p>IT Analyst</br>
-									   He is a gadget lover and curious learner who believes that Happiness and Knowledge grows when you share them with others. That's what he always tries to do.</p>
+									   He is a gadget lover and curious learner who believes that Happiness and Knowledge grow when you share them with others. That's what he always tries to do.</p>
 								</section>
 						</div>
 						<!--<p><span class="image left"><img src="images/pic05.jpg" alt="" /></span>He is an IT Consultant in Chicago, United States. He is currently working for Walgreens which is one of the Fortune 100 Healthcare companies.</p>
@@ -201,18 +201,28 @@
 							</p>
 							<div class="split style1">
 								<section>
+								<label id="nameError" style="font-weight:normal;color:Red;font-size:1em;display:none">
+								Name should be min 3 & max 20 characters long. Only alphabets and 'White Space' are allowed.
+								</label>
+								<label id="emailError" style="font-weight:normal;color:Red;font-size:1em;display:none">
+								Please provide a valid email address.
+								</label>
+								<label id="messageError" style="font-weight:normal;color:Red;font-size:1em;display:none">
+								Message should be minimum of 20 characters.
+								</label>
+								
 									<form name="form" method="" action="">
 										<div class="field half first">
 											<label for="name">Name</label>
-											<input type="text" name="name" id="name" required/>
+											<input type="text" name="name" id="name"/>
 										</div>
 										<div class="field half">
 											<label for="email">Email</label>
-											<input type="text" name="email" id="email" required/>
+											<input type="text" name="email" id="email"/>
 										</div>
 										<div class="field">
 											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="5" required></textarea>
+											<textarea name="message" id="message" rows="5"></textarea>
 										</div>
 										<ul class="actions">
 											<li><a href="" class="button submit" id="submitLink">Send Message</a></li>
