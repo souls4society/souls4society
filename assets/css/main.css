@@ -3929,3 +3929,74 @@
 		height:13em;
 		width:13em;
    }
+   
+/* Logo */
+
+img.logo {
+		height:7em;
+		width: 7.5em;
+	}
+
+@media screen and (max-width: 1280px) {
+	img.logo {
+		height:3em;
+		width: 3em;
+                margin-top:.3em;
+	}
+}
+
+/*video frame */
+video {
+	width:40em; 
+	height:24em;
+	margin-left:9em;
+}
+
+@media screen and (max-width: 1680px) {
+video {
+	width:40em; 
+	height:24em;
+	margin-left:14em;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+video {
+	width:40em; 
+	height:24em;
+	margin-left:16em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+video {
+	width:50em; 
+	height:24em;
+	margin-left:3em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+video {
+	width:39em; 
+	height:24em;
+	margin-left:0em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+video {
+	width:25em; 
+	height:17em;
+	margin-left:0em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+video {
+	width:18em; 
+	height:13em;
+	margin-left:0em;
+    }
+}
+
